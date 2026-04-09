@@ -1,0 +1,141 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+nav {
+  padding: 20px;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+/* Logo */
+.logo {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  background: linear-gradient(90deg, #a0c4ff, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+/* Glow effect */
+.logo::after {
+  content: "i-SATURN";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  color: rgba(255, 255, 255, 0.2);
+  filter: blur(6px);
+}
+
+.blue-i {
+  color: #4da3ff;
+}
+
+/* About Section */
+.about-section {
+  background: #ffffff;
+  color: #111;
+  padding: 100px 40px 250px 40px;
+  margin-top: 0;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1s ease forwards;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  padding-left: 35px;
+  font-family: 'Playfair Display', serif;
+}
+
+.about-section p {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* About Layout (image + text) */
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+/* Left text */
+.about-text {
+  flex: 1;
+  text-align: left;
+}
+
+/* Right image */
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: right;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 1;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer p {
+  margin: 0;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
