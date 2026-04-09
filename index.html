@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Poppins:wght@400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Playfair Display, sans-serif;
+    }
+
+    body {
+      color: white;
+      background: url('https://i.postimg.cc/25bcRZX7/upscalemedia-transformed-(1).png') no-repeat center center/cover;
+      height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Dark overlay for readability */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    nav {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+    }
+
+    nav h1 {
+      font-size: 24px;
+      letter-spacing: 2px;
+    }
+
+    nav a {
+      color: #ccc;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      max-width: 900px;
+    }
+
+    .hero p {
+      max-width: 750px;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background: white;
+      color: black;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="overlay"></div>
+
+  <nav>
+    <h1 class="logo">
+         <span class="blue-i">i</span>-SATURN
+    </h1>
+    <div>
+      <a href="about.html">About</a>
+      <a href="people.html">People</a>
+      <a href="research.html">Research</a>
+      <a href="launchpad.html">Launchpad</a>
+      <a href="join.html">Join</a>
+    </div>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <h2>
+         Intelligence Network for<br>
+         Satellite Imagery and Remote Sensing
+    </h2>
+    <p>
+      A Bangladeshi student-led initiative focused on satellite image analysis, geospatial data studies,
+      and remote sensing research through artificial intellegence, machine learning and geospatial intellegence.
+    </p>
+    <button class="btn">Get Started</button>
+  </section>
+
+  <section class="about-section">
+  <div class="about-container">
+
+    <div class="about-text">
+      <h2>About i-SATURN</h2>
+      <p>
+        i-SATURN is a student-led initiative focused on satellite imagery analysis,
+        remote sensing, and geospatial intelligence. We aim to build a collaborative
+        environment for learning, research, and practical applications of Earth observation data.
+      </p>
+    </div>
+
+    <div class="about-image">
+      <img src="https://i.postimg.cc/8krCPR5g/Untitled-design.png" alt="i-SATURN Logo">
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 i-SATURN. All rights reserved.</p>
+</footer>
+
+</body>
+
+</html>
